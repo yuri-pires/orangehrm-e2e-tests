@@ -1,0 +1,12 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.13.3",
+    "typescript": "^5.5.4"
+  }
+}
