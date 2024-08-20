@@ -53,7 +53,6 @@ Cypress.Commands.add("gui_createEmployee", (employee) => {
     let employeeId = response.body.data.employeeId;
     let empNumber = response.body.data.empNumber;
 
-
     cy.wrap(employeeId).as("employeeId");
     cy.wrap(empNumber).as("empNumber");
   });

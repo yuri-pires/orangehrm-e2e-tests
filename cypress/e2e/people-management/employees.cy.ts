@@ -11,7 +11,7 @@ describe("Testes do módulo de People Management", () => {
     cy.login();
   });
 
-  it("Cadastrar um novo Colaborador com sucesso", () => {
+  it("Cadastrar um novo Colaborador", () => {
     cy.gui_createEmployee(employee);
 
     cy.get("@empNumber").then((empNumber) => {
@@ -25,4 +25,6 @@ describe("Testes do módulo de People Management", () => {
       "be.visible"
     );
   });
+
+  it("Editar dados adicionais de um Colaborador com sucesso", () => {});
 });
