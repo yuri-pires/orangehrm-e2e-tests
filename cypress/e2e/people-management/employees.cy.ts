@@ -1,4 +1,3 @@
-import { faker } from "@faker-js/faker";
 import { fakerMockEmployee } from "../../support/faker_commands";
 
 describe("Testes do módulo de People Management", () => {
@@ -6,7 +5,7 @@ describe("Testes do módulo de People Management", () => {
     cy.login();
   });
 
-  it("Cadastrar um novo Colaborador", () => {
+  it.only("Cadastrar um novo Colaborador", () => {
     const employee = fakerMockEmployee();
     cy.gui_createEmployee(employee);
 
